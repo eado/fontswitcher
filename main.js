@@ -14,7 +14,7 @@ function stringToHTML() {
     
     var element = document.getElementById("html");
     element.innerHTML = html;
-
+ 
     for (var i = 1; i <= fonts; i++) {
         var elements = document.getElementsByClassName("font"+i);
 
