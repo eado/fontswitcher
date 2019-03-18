@@ -31,6 +31,10 @@ function stringToHTML() {
             if (document.getElementById("font"+i+"italic").checked) {
                 elements[k].style.fontStyle = "italic";
             }
+
+            if (document.getElementById("font"+i+"capital").checked) {
+                elements[k].innerHTML = elements[k].innerHTML.toUpperCase();
+            }
         }
     }
 }
