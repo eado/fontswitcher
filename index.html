@@ -7,10 +7,26 @@
     <title>Font Switcher</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92549782-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92549782-2');
+    </script>
+
+
 </head>
 <body>
     <h1>Font Switcher</h1>
-    <h3><i>Tip: Comic Sans is Comic Sans MS; works best on a computer</i></h3>
+    <h4><i>Tips:<ul>
+       <li>Comic Sans is Comic Sans MS</li> 
+       <li>Works best on a computer; copy and paste <b>only</b> on a computer</li> 
+       <li>You can type the name of any font supported in Google Docs even if it doesn't show up in the preview</li>
+       <li>Try Zapfino</li>
+    </ul></i></h4>
     <textarea name="" id="text" cols="30" rows="10" onkeyup="stringToHTML()"></textarea>
     <br>
     <h3>Switch fonts every: </h3>
