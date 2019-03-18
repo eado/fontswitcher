@@ -19,15 +19,17 @@ function stringToHTML() {
         var elements = document.getElementsByClassName("font"+i);
 
         for (var k = 0; k < elements.length; k++) {
-            if (i == 1) {
-                elements[k].style.fontFamily = document.getElementById("font1").value;
-                elements[k].style.backgroundColor = document.getElementById("font1bg").value;
-                elements[k].style.color = document.getElementById("font1color").value;
+            elements[k].style.fontFamily = document.getElementById("font"+i).value;
+            elements[k].style.backgroundColor = document.getElementById("font"+i+"bg").value;
+            elements[k].style.color = document.getElementById("font"+i+"color").value;
+            elements[k].style.fontSize = document.getElementById("font"+i+"size").value + "em";
+
+            if (document.getElementById("font"+i+"bold").checked) {
+                elements[k].style.fontWeight = "bold";
             } 
-            else if (i == 2) {
-                elements[k].style.fontFamily = document.getElementById("font2").value;
-                elements[k].style.backgroundColor = document.getElementById("font2bg").value;
-                elements[k].style.color = document.getElementById("font2color").value;
+            
+            if (document.getElementById("font"+i+"italic").checked) {
+                elements[k].style.fontStyle = "italic";
             }
         }
     }
