@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Font Switcher</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Font Switcher</h1>
+    <h3><i>Tip: Comic Sans is Comic Sans MS; works best on a computer</i></h3>
+    <textarea name="" id="text" cols="30" rows="10" onkeyup="stringToHTML()"></textarea>
+    <br>
+    <h3>Switch fonts every: </h3>
+    <input type="number"  value="1" name="" id="everyother" onkeyup="stringToHTML()"  onmouseup="stringToHTML()" placeholder="1 character">
+    <h3>Font 1</h3>
+    <input type="text" name="" id="font1" onkeyup="stringToHTML()" placeholder="Type name of font">
+    <input type="text" name="" id="font1color" onkeyup="stringToHTML()" placeholder="Type color of font">
+    <input type="text" name="" id="font1bg" onkeyup="stringToHTML()" placeholder="Type background color of font">
+    <h3>Font 2</h3>
+    <input type="text" name="" id="font2" onkeyup="stringToHTML()" placeholder="Type name of font">
+    <input type="text" name="" id="font2color" onkeyup="stringToHTML()" placeholder="Type color of font">
+    <input type="text" name="" id="font2bg" onkeyup="stringToHTML()" placeholder="Type background color of font">
+    <h1>Result</h1>
+    <div id="html"></div>
+</body>
+</html>
